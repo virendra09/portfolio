@@ -13,7 +13,6 @@ A modern, responsive personal portfolio website built with React, TypeScript, an
   - Work Experience
   - Education
   - Projects
-  - Reviews/Testimonials
   - Contact Form
 - Creative loading animations
 - Sidebar navigation
