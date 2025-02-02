@@ -76,14 +76,14 @@ const Hero = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1 }}
-                className="px-4 py-2 bg-gray-800/50 rounded-full text-gray-300 text-sm backdrop-blur-sm border border-gray-700/50"
+                className="px-4 py-2 bg-gray-800/50 rounded-full text-white-300 text-sm backdrop-blur-sm border border-gray-700/50"
               >
                 {skill}
               </motion.span>
             ))}
           </div>
 
-          <p className="text-2xl md:text-3xl text-gray-300 mb-8 font-light">
+          <p className="text-2xl md:text-3xl text-white-100 mb-8 font-light">
             <span className="text-blue-400 font-normal">Full Stack Developer</span> with expertise in{" "}
             <span className="text-purple-400 font-normal">React</span> and{" "}
             <span className="text-purple-400 font-normal">Node.js</span>
@@ -119,7 +119,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, rotate: 5 }}
-                className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-gray-700"
+                className="p-2 bg-gray-800 rounded-full text-white-400 hover:text-white hover:bg-gray-700"
               >
                 <Github className="w-6 h-6" />
               </motion.a>
@@ -128,7 +128,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, rotate: -5 }}
-                className="p-2 bg-gray-800 rounded-full text-gray-400 hover:text-white hover:bg-gray-700"
+                className="p-2 bg-gray-800 rounded-full text-white-400 hover:text-white hover:bg-gray-700"
               >
                 <Linkedin className="w-6 h-6" />
               </motion.a>

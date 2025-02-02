@@ -114,7 +114,7 @@ const Experience = () => {
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.5, delay: idx * 0.1 }}
-                      className="flex items-start gap-2 text-gray-300 hover:text-gray-100 transition-colors"
+                      className="flex items-start gap-2 text-green-300 hover:text-gray-100 transition-colors"
                     >
                       <ChevronRight className="w-5 h-5 mt-1 text-white-500" />
                       <span>{point}</span>

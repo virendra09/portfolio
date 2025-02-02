@@ -40,7 +40,7 @@ const Projects = () => {
       title: "Netflix Clone | MERN Stack",
       description: "A dynamic social platform with real-time features",
       images: [
-        "/assets/images/projects/netflix.jpeg",
+        "/assets/images/projects/netflix1.jpeg",
       
         // You can add more images here if desired
       ],
@@ -57,8 +57,88 @@ const Projects = () => {
       },
     },
 
-  
-  ];
+    // 2) E-Commerce Platform (Updated live URL to mmauto.ae)
+    {
+      title: "Amazon Clone ",
+      description: "Full-featured online shopping amazon clone.",
+      images: [
+        "/assets/images/projects/amazon1.jpeg",
+
+        "/assets/images/projects/amazon2.jpeg",
+        "/assets/images/projects/amazon3.jpeg",
+        "/assets/images/projects/amazon4.jpeg",
+
+        // Add more images if you have them
+      ],
+      tech: ["JavaScript", "React.js", "Material-UI", "HTML", "CSS"],
+      demoUrl: "https://react-amazon-clone-mu.vercel.app/",
+      details: {
+        overview:
+              "Developed a fully functional e-commerce platform inspired by Amazon, featuring a seamless shopping experience, product management, and user authentication.",        
+              features: [
+                "Dynamic product catalog with category-based filtering",
+                "Shopping cart and wishlist functionality",
+                "Secure checkout and order management",
+                "Responsive design using Material-UI",
+                "Add to cart functionality."
+        ],
+      },
+    },
+    {
+      title: "Weather Forecasting App | React.js   ",
+      description: "Built a real-time weather app using React.js and OpenWeather API, providing live updates with a responsive design with respective city images.",
+      images: [
+        "/assets/images/projects/weather2.jpeg",
+
+        "/assets/images/projects/weather1.jpeg",
+
+        // Add more images if you have them
+      ],
+      tech: ["JavaScript",  "React.js" ,"REST APIs,",  "CSS" ],
+      demoUrl: "https://weather-fore-cast-eight.vercel.app/",
+      details: {
+        overview:
+        "Developed a real-time weather app using React.js and OpenWeather API, featuring live updates and a responsive design",
+       features: [
+              
+                       "Developed a real-time weather app using React.js, displaying live updates with city image based on user input",
+                      "Integrated OpenWeather API to fetch real-time weather data dynamically",
+                      "Implemented a responsive design for seamless use on both desktop and mobile devices",
+                      "Ensured a smooth user experience with efficient API handling and modern UI styling"
+      ],
+      },
+    },
+    {
+      title: "Invoice Generator App",
+      description: "The Invoice Generator App, built with React.js, allows users to create and export professional invoices with dynamic tax calculations. It features a responsive design, real-time total updates, and PDF export functionality.",
+      images: [
+        "/assets/images/projects/invoice1.jpeg",
+        "/assets/images/projects/invoice2.jpeg",
+        "/assets/images/projects/invoice3.jpeg",
+        "/assets/images/projects/invoice4.jpeg",
+        "/assets/images/projects/invoice5.jpeg",
+        "/assets/images/projects/invoice6.jpeg",
+
+       
+
+        // Add more images if you have them
+      ],
+      tech: ["JavaScript", "React.js", "REST APIs", "CSS", "jsPDF", "html2canvas" ],
+      demoUrl: "https://invoice-generator-three-psi.vercel.app/",
+      details: {
+        overview:
+        "Built an intuitive Invoice Generator app using React.js, enabling users to create and download invoices seamlessly.",        
+        features: [
+              
+          "Designed a user-friendly form to input seller, billing, and shipping details, along with order and invoice specifics",
+           "Implemented dynamic item management with automatic tax calculations based on GST rules (CGST, SGST, IGST)",
+           "Integrated jsPDF and html2canvas for exporting invoices as PDF files, including signature support",
+           "Achieved a clean and responsive design for a smooth experience across devices",
+
+        ]
+      },
+    },
+];
 
   return (
     <section
@@ -136,7 +216,7 @@ const Projects = () => {
                 <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-300 mb-4">{project.description}</p>
+                <p className="text-white-300 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, idx) => (
                     <span

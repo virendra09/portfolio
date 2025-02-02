@@ -113,7 +113,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                       className={`flex items-center px-4 py-3 rounded-lg transition-all duration-200 group backdrop-blur-sm ${
                         isActive 
                           ? 'bg-gradient-to-r from-blue-600/40 to-purple-600/40 text-white' 
-                          : 'text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/20 hover:to-purple-600/20'
+                          : 'text-white-300 hover:text-yellow hover:bg-gradient-to-r hover:from-blue-600/20 hover:to-purple-600/20'
                       }`}
                     >
                       <item.icon className={`w-5 h-5 min-w-[1.25rem] transition-colors ${

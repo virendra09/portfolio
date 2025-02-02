@@ -39,7 +39,7 @@ const About = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div ref={ref} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">About Me</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500  to-pink-500">About Me</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mx-auto rounded-full"></div>
         </motion.div>
 
@@ -55,14 +55,14 @@ const About = () => {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: 20 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6, delay: 0.4 }} className="lg:col-span-2 space-y-8">
-            <p className="text-xl text-gray-300 leading-relaxed">Detail-oriented Full Stack Developer with a strong foundation in MERN stack, web scraping, and scalable application development. Passionate about delivering innovative, client-focused solutions using technologies like React.js, Node.js, and PostgreSQL.</p>
+            <p className="text-xl text-white-100 leading-relaxed">Detail-oriented Full Stack Developer with a strong foundation in MERN stack, web scraping, and scalable application development. Passionate about delivering innovative, client-focused solutions using technologies like React.js, Node.js, and PostgreSQL.</p>
             
             <div className="grid grid-cols-2 gap-6">
               {skills.map((skill, index) => (
                 <motion.div key={index} className="p-6 rounded-xl bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300" whileHover={{ scale: 1.05 }} onHoverStart={() => setHoveredSkill(index)} onHoverEnd={() => setHoveredSkill(null)}>
                   <div className={`p-3 rounded-lg bg-gradient-to-r ${skill.color} mb-4 w-fit`}>{skill.icon}</div>
                   <h3 className="font-semibold text-xl text-white mb-2">{skill.label}</h3>
-                  <p className="text-gray-400">{skill.description}</p>
+                  <p className="text-green-300">{skill.description}</p>
                   <motion.div className="w-full h-1 bg-gray-700/50 mt-4 rounded-full overflow-hidden" initial={{ scaleX: 0 }} animate={{ scaleX: hoveredSkill === index ? 1 : 0 }} transition={{ duration: 0.3 }} style={{ transformOrigin: "left" }}>
                     <div className={`h-full bg-gradient-to-r ${skill.color}`}></div>
                   </motion.div>

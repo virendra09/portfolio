@@ -112,7 +112,7 @@ const Contact: React.FC = () => {
               <h1 className="text-4xl lg:text-5xl font-bold text-white tracking-tight mt-2">
                 Let's Work Together
               </h1>
-              <p className="text-gray-300 text-lg leading-relaxed mt-4">
+              <p className="text-green-300 text-lg leading-relaxed mt-4">
                 Have a project in mind? Fill out the form and I'll get back to you.
               </p>
             </motion.div>
@@ -124,13 +124,13 @@ const Contact: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6 mt-12"
           >
-            <div className="flex items-center space-x-4 text-gray-300">
+            <div className="flex items-center space-x-4 text-green-300">
               <div className="bg-blue-500/10 p-3 rounded-lg">
                 <Mail className="w-6 h-6 text-blue-400" />
               </div>
               <div>
                 <p className="font-medium text-white">Email</p>
-                <p className="text-sm">virendra.dev09@gmail.com</p>
+                <p className="text-la">virendra.dev09@gmail.com</p>
               </div>
             </div>
             {/* You can add more contact info here if needed */}
@@ -165,18 +165,18 @@ const Contact: React.FC = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="relative">
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-white-300 mb-2">
                     Full Name
                   </label>
                   <div className="relative">
-                    <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+                    <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-white-400" />
                     <input
                       type="text"
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full pl-12 pr-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-200"
+                      className="w-full pl-12 pr-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white-200"
                       placeholder="John Doe"
                       required
                     />
@@ -184,18 +184,18 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="relative">
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-white-300 mb-2">
                     Email Address
                   </label>
                   <div className="relative">
-                    <AtSign className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+                    <AtSign className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-white-400" />
                     <input
                       type="email"
                       id="email"
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full pl-12 pr-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-200"
+                      className="w-full pl-12 pr-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white-200"
                       placeholder="john@example.com"
                       required
                     />
@@ -204,7 +204,7 @@ const Contact: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-white-300 mb-2">
                   Subject
                 </label>
                 <input
@@ -213,14 +213,14 @@ const Contact: React.FC = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-200"
+                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white-200"
                   placeholder="What's this about?"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-white-300 mb-2">
                   Message
                 </label>
                 <textarea
@@ -229,7 +229,7 @@ const Contact: React.FC = () => {
                   rows={6}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-200 resize-none"
+                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white-200 resize-none"
                   placeholder="Tell me about your project..."
                   required
                 />

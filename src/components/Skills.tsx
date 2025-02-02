@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Code, Server, Wrench, ChevronDown, ChevronUp, Info } from 'lucide-react';
+import { Code, Server, Wrench, ChevronDown, ChevronUp, Info, Database } from 'lucide-react';
 
 const Skills = () => {
   const controls = useAnimation();
@@ -22,33 +22,47 @@ const Skills = () => {
     {
       name: 'Frontend',
       icon: Code,
-      color: 'from-blue-500 to-cyan-400',
+      color: 'from-blue-500 to-red-400',
       description: 'Building responsive and interactive user interfaces',
       skills: [
-        { name: 'HTML/CSS', level: 85, description: 'Semantic HTML and modern CSS including Flexbox, Grid, and animations' },
-        { name: 'JavaScript', level: 80, description: 'ES6+, DOM manipulation, async programming' },
-        { name: 'Vue.js', level: 70, description: 'Component architecture, state management, Vue Router' },
-        { name: 'React', level: 70, description: 'Hooks, Context API, Redux, Next.js' },
+        { name: 'HTML/CSS', level: 100, description: 'Semantic HTML and modern CSS including Flexbox, Grid, and animations' },
+        { name: 'JavaScript', level: 100, description: 'ES6+, DOM manipulation, async programming' },
+        { name: 'React', level: 98, description: 'Hooks, Context API, Redux, Next.js' },
       ],
     },
     {
       name: 'Backend',
       icon: Server,
       color: 'from-purple-500 to-pink-500',
+      description: 'Server-side development',
+      skills: [
+        { name: 'Node.js', level: 97, description: 'Server-side JavaScript runtime, event-driven architecture, asynchronous programming' },  
+        { name: 'Express.js', level: 97, description: 'Lightweight web framework for Node.js, middleware integration, routing, API handling' },  
+        { name: 'RESTful APIs', level: 98, description: 'API design, authentication, documentation' },
+        
+      ],
+    },
+    {
+      name: 'Database',
+      icon: Database,
+      color: 'from-yellow-500 to-pink-500',
       description: 'Server-side development and database management',
       skills: [
-        { name: 'MySQL', level: 85, description: 'Database design, optimization, complex queries' },
-        { name: 'RESTful APIs', level: 85, description: 'API design, authentication, documentation' },
-      ],
+        { name: 'MongoDB', level: 97, description: 'NoSQL database, schema-less design, document-based storage, aggregation pipeline' },  
+        { name: 'SQL', level: 95, description: 'Structured query language, relational database management, indexing, transactions' },  
+        { name: 'MySQL', level: 96, description: 'Open-source relational database, ACID compliance, scalability, replication' },  
+        { name: 'PostgreSQL', level: 95, description: 'Advanced relational database, extensibility, JSON support, high concurrency' },  
+        ],
     },
     {
       name: 'Tools & Others',
       icon: Wrench,
-      color: 'from-green-500 to-emerald-500',
+      color: 'from-green-500 to-blue-500',
       description: 'Development tools and deployment technologies',
       skills: [
-        { name: 'Git', level: 80, description: 'Version control system for tracking code changes and collaboration' },
-        { name: 'PostMan', level: 75, description: 'API development and testing tool for building and testing APIs' },
+        { name: 'Git', level: 98, description: 'Version control system for tracking code changes and collaboration' },
+        { name: 'GitHub', level: 100, description: 'Cloud-based platform for version control, collaboration, and code hosting using Git' },
+        { name: 'PostMan', level: 95, description: 'API development and testing tool for building and testing APIs' },
       ],
     },
   ];
@@ -199,7 +213,7 @@ const Skills = () => {
                   >
                     <div className="flex justify-between mb-2">
                       <div className="flex items-center gap-2">
-                        <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
+                        <span className="text-white-300 group-hover:text-white transition-colors duration-300">
                           {skill.name}
                         </span>
                         <Info className="w-4 h-4 text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -224,7 +238,7 @@ const Skills = () => {
                             duration: 0.2,
                             ease: "easeOut"
                           }}
-                          className="mt-2 text-sm text-gray-400 bg-gray-800/90 p-2 rounded-md backdrop-blur-sm"
+                          className="mt-2 text-sm text-white-400 bg-gray-800/90 p-2 rounded-md backdrop-blur-sm"
                         >
                           {skill.description}
                         </motion.div>

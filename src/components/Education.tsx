@@ -19,6 +19,7 @@ const Education = () => {
       id: 1,
       title: "B.Tech",
       institution: "Guru Ghasidas University",
+      branch: "Electronics and Communication",
       year: "June 2023",
       grade: "CGPA: 7.89",
       icon: GraduationCap,
@@ -92,16 +93,20 @@ const Education = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">{edu.title}</h3>
-                    <p className="text-gray-300 flex items-center gap-2">
+                    <p className="text-green-300 flex items-center gap-2">
                       <Building className="w-4 h-4" />
                       {edu.institution}
                     </p>
-                    <p className="text-gray-300 flex items-center gap-2 mt-1">
+                    <p className="text-green-300 flex items-center gap-2">
+                      <Building className="w-4 h-4" />
+                      {edu.branch}
+                    </p>
+                    <p className="text-green-300 flex items-center gap-2 mt-1">
                       <Calendar className="w-4 h-4" />
                       {edu.year}
                     </p>
                     {edu.grade && (
-                      <p className="text-gray-300 flex items-center gap-2 mt-1">
+                      <p className="text-green-300 flex items-center gap-2 mt-1">
                         <Star className="w-4 h-4 text-yellow-400" />
                         {edu.grade}
                       </p>
@@ -117,7 +122,7 @@ const Education = () => {
                       transition={{ duration: 0.3 }}
                       className="mt-4 pt-4 border-t border-gray-700"
                     >
-                      <h4 className="text-sm font-semibold text-gray-300 mb-2">Key Achievements:</h4>
+                      <h4 className="text-sm font-semibold text-yellow-300 mb-2">Key Achievements:</h4>
                       <ul className="space-y-2">
                         {edu.achievements.map((achievement, i) => (
                           <motion.li
@@ -125,7 +130,7 @@ const Education = () => {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: i * 0.1 }}
-                            className="flex items-center gap-2 text-sm text-gray-300"
+                            className="flex items-center gap-2 text-sm text-green-300"
                           >
                             <Award className="w-4 h-4 text-yellow-400" />
                             {achievement}
